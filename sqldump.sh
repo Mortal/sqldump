@@ -9,5 +9,5 @@ function db_dump_base() {
 	 git diff --quiet &&
 	 mv "../$filename" "$project.sql" &&
 	 git add "$project.sql" &&
-	 git commit -m "Update $project.sql")
+	 git commit -qm "Update $project.sql")
 }
